@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: khaki;
+    display: flex;
+    font-size: 5em;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid black;
+
+}
+.header div {
+    padding-left: 10%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "XXX";
+}
+
+nav {
+    grid-area: "nav";
+    border-bottom: solid black;
+    background-color: khaki;
+}
+
+nav div {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

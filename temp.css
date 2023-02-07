@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    background-color: khaki;
 }
 .header {
     width: 100%;
@@ -16,21 +17,22 @@ body {
     align-items: center;
     border-bottom: solid black;
     font-weight: bold;
-    color: black;
+    color: white;
     
 
 }
 .header div {
     padding-left: 10%;
-    text-shadow: white 5px;
+    text-shadow: black 5px 5px;
 }
 
 main {
     display: grid;
-    grid-template-rows: 50px 400px;
+    grid-template-rows: 50px 400px 30px;
     grid-template-columns: auto;
     grid-template-areas: "nav" 
-                        "section";
+                        "section"
+                        "footer";
 }
 
 nav {
@@ -46,6 +48,24 @@ nav div {
     justify-content: space-around;
     align-items: center;
 }
+a:visited{
+    color: blue;
+}
+a:active {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+nav span {
+    background-color: aqua;
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+
+
 
 .formCont {
     grid-area: "section";
@@ -85,4 +105,18 @@ nav div {
     border: 0;
     background-color: orangered;
     border-radius: 30px;
+}
+
+
+footer{
+    grid-area: "footer";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+    border-top: black solid;
+
+}
+#signUp {
+    color: orange;
 }

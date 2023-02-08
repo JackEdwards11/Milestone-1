@@ -1,42 +1,45 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-    <meta charset="utf-8" />
-	<title>Home Page</title> 
-    <link rel ="stylesheet" href="temp.css" type="text/css">
+<title>Home Page</title> 
 </head> 
 <body> 
-    <header class="header">
-        <div>Task Manager</div>
-    </header>
-    <main>
-        <nav>
-            <div>
-                <span><a href="temp.html">Home</a></span>
-                <span><a href="temp.html">My To Do List</a></span>
-                <span><a href="temp.html">Create New Task</a></span>
-                <span><a href="temp.html">About</a></span>
-                <span id="signUp"><a href="temp.html">Sign Up</a></span>
-            </div>
-        </nav>
-        <section class="formCont">
-            <form action="temp.html" class="form">
-                <input class="login" type="text" placeholder="Username" />
-                <input class="login" type="text" placeholder="Password" />
-                <input class="login" type="submit" value="Sign In" />
-            </form>
-        </section>
+    <header> 
+        <img src="Put Image link here" alt="Logo"> 
+    </header> 
+    <nav> 
+        <ul> 
+            <li><a href="index.html">Home</a></li>  
+            <li><a href="list.html">My To Do List</a></li>
+            <li><a href="createNew.html">Create New Task</a></li> 
+            <li><a href="detail.html">About</a></li> 
+        </ul> 
+        <ul> 
+            <li>
+                <form action="list.html">
+                    <input type="text" placeholder="Username" />
+                    <br>
+                    <br>
+                    <input type="text" placeholder="Password" />
+                    <input type="submit" value="Login" />
+                </form>
 
-
-
-        <footer>
-            Copyright ©2023 Task Manager
-        </footer>
-
-
-
-    </main>
-
-
+            </li> 
+            <br>
+            <li>
+                <form action="list.html">
+                    <input type="submit" value="Sign Up" />
+                </form>
+            </li> 
+        </ul> 
+    </nav> 
+    <main> 
+        <h1>Welcome to Task Manager</h1> 
+        <p>This website was made to offer a streamlined way to manage your tasks and objectives. 
+            You can create and classify tasks, set notifications and due dates, and monitor your progress.</p> 
+    </main> 
+    <footer> 
+        <p>Copyright ©2023 Task Manager</p> 
+    </footer> 
 </body> 
 </html>

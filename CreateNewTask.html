@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8" />
+	<title>Home Page</title> 
+    <link rel ="stylesheet" href="style.css" type="text/css">
+</head> 
+<body> 
+    <header class="header">
+        <div>Create New Task</div>
+    </header>
+    <main>
+        <nav>
+            <div>
+                <span><a href="index.html">Home</a></span>
+                <span><a href="myToDoList.html">My To Do List</a></span>
+                <span><a href="CreateNewTask.html">Create New Task</a></span>
+                <span><a href="detail.html">View Task Detail</a></span>
+                <span id="signUp"><a href="myToDoList.html">Sign Up</a></span>
+            </div>
+        </nav>
+        <section class="createTask">
+            <h1 style="padding-left: 10px;">Create New Task</h1> 
+            <form action="myToDoList.html" class="taskForm"> 
+                <label for="taskName">Task Name:</label> 
+                <input type="text" id="taskName" name="taskName"> 
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+    
+                <option value="urgent">Urgent</option>
+    
+                <option value="Not Urgent">Not Urgent</option>
+                
+                </select> 
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate">
+    
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+    
+                <option value="pending">Pending</option> 
+                <option value="overdue">Overdue</option> 
+                <option value="incomplete">Incomplete</option> 
+                <option value="done">Done</option> 
+                </select> <br><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location"><br><br>
+    
+                <label for="description">Description:</label>
+    
+                <textarea id="description" name="description" rows="5" cols="50" style="vertical-align: top;"></textarea> 
+                <!--<input type="submit" value="Create">-->
+                <input type="submit" value="submit">
+        </section>
+
+
+
+        <footer>
+            Copyright ©2023 Task Manager
+        </footer>
+
+
+
+    </main>
+
+
+</body> 
+</html>

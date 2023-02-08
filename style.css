@@ -56,6 +56,7 @@ nav div {
     justify-content: space-around;
     align-items: center;
 }
+
 a:visited{
     color: blue;
 }
@@ -138,9 +139,7 @@ footer{
     border-top: black solid;
 
 }
-#signUp {
-    color: orange;
-}
+
 
 .intro {
     grid-area: "intro";

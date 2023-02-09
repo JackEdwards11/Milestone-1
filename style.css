@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Courier New', Courier, monospace;
     background-color: khaki;
 }
@@ -51,12 +51,11 @@ nav {
 
 nav div {
     height: 100%;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 a:visited{
     color: blue;
 }
@@ -69,9 +68,16 @@ a:hover {
 }
 
 nav span {
-    background-color: aqua;
+    /* background-color: aqua;
     padding: 5px 5px;
-    border-radius: 15px;
+    border-radius: 15px; */
+
+    /* display: block; */
+    background-color: #c7e3ec;
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 
@@ -139,7 +145,9 @@ footer{
     border-top: black solid;
 
 }
-
+#signUp {
+    color: orange;
+}
 
 .intro {
     grid-area: "intro";
@@ -158,4 +166,70 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+/* task card */
+.task-cards-container {
+    display: flex;
+    grid-gap:50px;
+    justify-content: space-between;
+  }
+  
+  .task-card {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 50px;
+    margin-bottom: 1em;
+    margin-left: 170px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  .task-cards-container>div:hover{
+    transform: scale(1.25);
+  transition: all 0.3s ease-in-out;
+}
+  
+  h3 {
+    margin-top: 0;
+  }
+
+/* Nav button */
+  ul {
+    list-style-type: none; /*no marker will be displayed*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+li {
+    float: left;
+    margin-right: 20px;
+}
+  
+li a {
+    display: block;
+    background-color: #c7e3ec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+  
+li a:hover, a:active {
+    background-color: #948a70;
+}
+.center-button {
+	display: table; 
+	margin: 0 auto;
+}
+
+/* center text*/
+.center-text{
+    text-align: center;
+}
+h2::first-letter {
+    color: #885980;
+    font-size: xx-large;
 }

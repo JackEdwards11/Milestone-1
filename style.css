@@ -15,7 +15,8 @@ body {
     width: 100%;
     height: 200px;
     /* background-color: khaki; */
-    background-image: url("https://www.crushpixel.com/big-static14/preview4/background-from-set-colour-pencils-1620157.jpg");
+    /* background-image: url("https://www.crushpixel.com/big-static14/preview4/background-from-set-colour-pencils-1620157.jpg"); */
+    background-image: url("imgs/pencils.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

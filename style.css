@@ -64,20 +64,21 @@ a:active {
 }
 
 a:hover {
-    color: hotpink;
+    background-color: #948a70;
 }
 
-nav span {
-    /* background-color: aqua;
-    padding: 5px 5px;
-    border-radius: 15px; */
-
-    /* display: block; */
+nav a {
     background-color: #c7e3ec;
     /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 10px;
+}
+
+
+nav span:hover{
+    background-color: #948a70;
+    cursor: pointer;
 }
 
 

@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0;
     font-family: 'Courier New', Courier, monospace;
     background-color: khaki;
 }
@@ -15,8 +15,7 @@ body {
     width: 100%;
     height: 200px;
     /* background-color: khaki; */
-    /* background-image: url("https://www.crushpixel.com/big-static14/preview4/background-from-set-colour-pencils-1620157.jpg"); */
-    background-image: url("imgs/pencils.jpg");
+    background-image: url("https://www.crushpixel.com/big-static14/preview4/background-from-set-colour-pencils-1620157.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,14 +44,14 @@ main {
 }
 
 nav {
-    grid-area: "nav";
+    grid-area: nav;
     border-bottom: solid black;
     background-color: khaki;
 }
 
 nav div {
     height: 100%;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,39 +64,30 @@ a:active {
 }
 
 a:hover {
-    background-color: #948a70;
-    color: white;
+    color: hotpink;
 }
 
-nav a {
-    background-color: #c7e3ec;
-    /* text-align: center; */
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-
-nav span:hover{
-    background-color: #948a70;
-    cursor: pointer;
+nav span {
+    background-color: aqua;
+    padding: 5px 5px;
+    border-radius: 15px;
 }
 
 
 
 .formCont {
-    grid-area: "section";
+    grid-area: section;
     height: 100%;
     border-bottom: solid black;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 40% 60%;
-    grid-template-areas: "login" "intro";
+    grid-template-areas: "login intro";
 
 }
 
 .createTask {
-    grid-area: "section";
+    grid-area: section;
     height: 100%;
     border-bottom: solid black;
 }
@@ -110,7 +100,7 @@ nav span:hover{
 }
 
 .form {
-    grid-area: "login";
+    grid-area: login;
     border-right: solid black;
     /* font-size: 100px; */
     display: flex;
@@ -140,7 +130,7 @@ nav span:hover{
 
 
 footer{
-    grid-area: "footer";
+    grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +143,7 @@ footer{
 }
 
 .intro {
-    grid-area: "intro";
+    grid-area: intro;
     font-size: 2em;
     padding-left: 10px;
 
@@ -169,70 +159,4 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-}
-
-/* task card */
-.task-cards-container {
-    display: flex;
-    grid-gap:50px;
-    justify-content: space-between;
-  }
-  
-  .task-card {
-    width: 30%;
-    background-color: #f2f2f2;
-    padding: 50px;
-    margin-bottom: 1em;
-    margin-left: 170px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-
-  }
-  .task-cards-container>div:hover{
-    transform: scale(1.25);
-  transition: all 0.3s ease-in-out;
-}
-  
-  h3 {
-    margin-top: 0;
-  }
-
-/* Nav button */
-  ul {
-    list-style-type: none; /*no marker will be displayed*/
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-  }
-  
-li {
-    float: left;
-    margin-right: 20px;
-}
-  
-li a {
-    display: block;
-    background-color: #c7e3ec;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-  
-li a:hover, a:active {
-    background-color: #948a70;
-}
-.center-button {
-	display: table; 
-	margin: 0 auto;
-}
-
-/* center text*/
-.center-text{
-    text-align: center;
-}
-h2::first-letter {
-    color: #885980;
-    font-size: xx-large;
 }

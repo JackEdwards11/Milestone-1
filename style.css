@@ -1,11 +1,18 @@
 body {
-    margin: 0;
+    box-sizing:border-box;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 25%;
     font-family: 'Courier New', Courier, monospace;
     background-color: khaki;
+    text-align: center;
+    position:relative;
 }
 .list {
     display: grid;
-    grid-template-rows: 50px auto 30px;
+    grid-template-rows: 70px auto 30px;
     grid-template-columns: auto;
     grid-template-areas: "nav" 
                         "section"
@@ -37,7 +44,7 @@ body {
 
 main {
     display: grid;
-    grid-template-rows: 50px 400px 30px;
+    grid-template-rows: 70px 400px 30px;
     grid-template-columns: auto;
     grid-template-areas: "nav" 
                         "section"
@@ -48,15 +55,21 @@ nav {
     grid-area: nav;
     border-bottom: solid black;
     background-color: khaki;
-}
-
-nav div {
-    height: 100%;
-    width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    
 }
+
+/* nav div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: black solid;
+} */
 a:visited{
     color: blue;
 }
@@ -65,22 +78,26 @@ a:active {
 }
 
 a:hover {
-    color: hotpink;
-}
-
-nav a {
-    background-color: #c7e3ec;
-    /* text-align: center; */
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-nav span:hover{
+    color: rgb(5, 246, 246);
     background-color: #948a70;
     cursor: pointer;
 }
 
+nav a {
+    background-color: #c7e3ec;
+    /* padding: 2% 4%; */
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* nav span:hover{
+    background-color: #948a70;
+    cursor: pointer;
+} */
+section{
+    margin-top:20px;
+    margin-bottom:10px;
+}
 
 
 .formCont {
@@ -97,8 +114,9 @@ nav span:hover{
 .createTask {
     grid-area: section;
     height: 100%;
-    border-bottom: solid black;
+    /* border-bottom: solid black; */
 }
+
 .taskForm {
     padding-left: 10px;
     font-size: larger;
@@ -119,11 +137,11 @@ nav span:hover{
 }
 
 .login[type="text"] {
-    width: 40%;
-    height: 12%;
+    width: 50%;
+    height: 10%;
     /* width: 300px;
     height: 50px; */
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 .login[type="submit"] {
@@ -139,7 +157,7 @@ nav span:hover{
 
 footer{
     grid-area: footer;
-    display: flex;
+    display: fixed;
     justify-content: center;
     align-items: center;
     background-color: khaki;
@@ -173,32 +191,47 @@ footer{
 /* task card */
 .task-cards-container {
     display: flex;
-    grid-gap:50px;
+    flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .task-card {
-    width: 30%;
+    position: relative;
+}
+
+.task-card {
+    width: 100%;
+    max-width: 400px;
     background-color: #f2f2f2;
-    padding: 50px;
+    padding: 5%;
     margin-bottom: 1em;
-    margin-left: 170px;
+    margin-left: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
 
-  }
-  .task-cards-container>div:hover{
-    transform: scale(1.25);
-  transition: all 0.3s ease-in-out;
+.task-cards-container > div:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .task-card {
+        width: 30%;
+    }
+    nav a {
+        padding: 14px 16px;
+    }
 }
   
-  h3 {
+h3 {
     margin-top: 0;
-  }
+}
 
 /* Nav button */
 
-
+.center-btn {
+	display: table; 
+	margin-top:15px;
+    margin-left:auto;
+}
 /* center text*/
 .center-text{
     text-align: center;
@@ -207,4 +240,9 @@ h2::first-letter {
     color: #885980;
     font-size: xx-large;
 }
-
+.p-todolist{
+    margin-left:10px;
+}
+h1{
+    text-align:center;
+}
